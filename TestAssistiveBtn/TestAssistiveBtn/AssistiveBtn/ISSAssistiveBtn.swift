@@ -49,9 +49,7 @@ class ISSAssistiveBtn: UIButton {
 
     }
     func clickAction() -> Void {
-        if clickBlock != nil {
-            clickBlock!()
-        }
+        clickBlock?()
     }
     @objc private func changePosition(recognizer: UIPanGestureRecognizer) -> Void{
 
